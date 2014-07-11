@@ -1,0 +1,36 @@
+rodrigo@rodrigopc:~/estudoJava$ $CJAVA/javac *.java  br/rodrigo/estudoHeranca/CarroCorrida.java
+Aplicacao.java:22: cannot find symbol
+symbol  : class CorridaCorrida
+location: class Aplicacao
+	CarroCorrida c = new CorridaCorrida(110.10);	
+	                     ^
+Aplicacao.java:23: velocidade has private access in br.rodrigo.estudoHeranca.CarroCorrida
+	System.out.println("Velocidade: " + c.velocidade);
+	                                     ^
+br/rodrigo/estudoHeranca/CarroCorrida.java:12: possible loss of precision
+found   : float
+required: int
+		return this.velocidade;
+		           ^
+3 errors
+
+Comentário dos erros:
+em 	System.out.println("Velocidade: " + c.velocidade); está acessando variáveel privada.
+"velocidade has private access in br.rodrigo.estudoHeranca.CarroCorrida"
+
+
+br/rodrigo/estudoHeranca/CarroCorrida.java:12: possible loss of precision
+found   : float
+required: int
+		return this.velocidade;
+A variável é float mas o acessor é do tipo int. Então pode haver perda de precisão. O java não permite isto. Tem que explicitar usando cast ou corrigir o acessor pava tipo float
+
+
+Aplicacao.java:22: cannot find symbol
+symbol  : constructor CarroCorrida(double)
+location: class br.rodrigo.estudoHeranca.CarroCorrida
+	CarroCorrida c = new CarroCorrida(12.0);	
+	                 ^
+1 error
+O constutor tem um parametro do tipo double, mas um float é passado. 12.0 é double, para ser considerado float tem que ser 12.0f
+
