@@ -4,7 +4,6 @@ package br.rodrigo.estudoHeranca;
 public class CarroCorrida{
 
 	public CarroCorrida(float velocidade){
-		System.out.println("Início de constutor de  CarroCorrida1");
 		this.velocidade = velocidade;
 }
 
