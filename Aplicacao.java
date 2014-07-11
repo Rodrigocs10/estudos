@@ -1,6 +1,7 @@
 import br.rodrigo.Dispositivo;
 import br.rodrigo.processos.Produtor;
 import br.rodrigo.estudoHeranca.CarroCorrida;
+import br.rodrigo.estudoHeranca.CarroCorridaEspecializado;
 
 public class Aplicacao{
 
@@ -19,7 +20,7 @@ public class Aplicacao{
     System.out.println("Teste de Processo"); */
 
 	
-	CarroCorrida c = new CarroCorrida();	
+	CarroCorridaEspecializado c = new CarroCorridaEspecializado();	
 	System.out.println("Velocidade: " + c.getVelocidade());
   }
 
