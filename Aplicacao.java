@@ -3,6 +3,7 @@ import br.rodrigo.processos.Produtor;
 import br.rodrigo.estudoHeranca.CarroCorrida;
 import br.rodrigo.estudoHeranca.CarroCorridaEspecializado;
 import br.rodrigo.variaveis.Variaveis;
+import br.rodrigo.classes.Public;
 
 public class Aplicacao{
 
@@ -20,10 +21,13 @@ public class Aplicacao{
   produtor.gerarResultados();
     System.out.println("Teste de Processo"); */
 
-	Variaveis v = new Variaveis();
+/*	Variaveis v = new Variaveis();
 	System.out.println("Quantidade " + v.get_Quantidade());
-	System.out.println("valor " + v.get$Valor());
-	
+	System.out.println("valor " + v.get$Valor());*/
+
+
+	Public p = new Public();
+
 
 }
 }
