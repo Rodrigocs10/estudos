@@ -5,33 +5,17 @@ import br.rodrigo.estudoHeranca.CarroCorridaEspecializado;
 import br.rodrigo.variaveis.Variaveis;
 import br.rodrigo.classes.Public;
 import br.rodrigo.interfaces.Corsa;
+import br.rodrigo.fixacao.ClasseB;
+import br.rodrigo.fixacao.outroPacote.ClasseC;
 
 public class Aplicacao{
 
-  private boolean ligado;
+	private boolean ligado;
 
-  public static void main(String args[]){
-    /*Dispositivo dispositivo = new Dispositivo();
-    dispositivo.setAtivado(true);
-    System.out.println("Ativado: " + dispositivo.isAtivado());
-    System.out.println("Leitura: " + dispositivo.leitura);
-    Produtor produtor = new Produtor();
-    produtor.gerarResultados();
-    System.out.println("Teste de Processo");
+	public static void main(String args[]){	
+		ClasseB cb = new ClasseB();
+		ClasseC cc = new ClasseC();
 
-  produtor.gerarResultados();
-    System.out.println("Teste de Processo"); */
-
-/*	Variaveis v = new Variaveis();
-	System.out.println("Quantidade " + v.get_Quantidade());
-	System.out.println("valor " + v.get$Valor());*/
-
-
-/*	Public p = new Public();*/
-
-Corsa c = new Corsa();
-		c.imprimirValores();
-
-
+	
 }
 }
