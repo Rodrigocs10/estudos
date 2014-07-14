@@ -4,6 +4,7 @@ import br.rodrigo.estudoHeranca.CarroCorrida;
 import br.rodrigo.estudoHeranca.CarroCorridaEspecializado;
 import br.rodrigo.variaveis.Variaveis;
 import br.rodrigo.classes.Public;
+import br.rodrigo.interfaces.Corsa;
 
 public class Aplicacao{
 
@@ -26,7 +27,10 @@ public class Aplicacao{
 	System.out.println("valor " + v.get$Valor());*/
 
 
-	Public p = new Public();
+/*	Public p = new Public();*/
+
+Corsa c = new Corsa();
+		c.imprimirValores();
 
 
 }
