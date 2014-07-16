@@ -36,4 +36,14 @@ public void set_Quantidade(int _quantidade){
 }
 
 
+/*
+	Char é na verdade um tipo inteiro. Então qualque tipo de inteiro pode armazenar um char.
+	Mas para nao dar problema tem que armazenar com tamanho a partir de int que é: int, long, float, double
+*/
+public int getChar(){
+
+	int x = 'a';
+	return x;
+}
+
 }

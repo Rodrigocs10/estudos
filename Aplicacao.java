@@ -7,15 +7,14 @@ import br.rodrigo.classes.Public;
 import br.rodrigo.interfaces.Corsa;
 import br.rodrigo.fixacao.ClasseB;
 import br.rodrigo.fixacao.outroPacote.ClasseC;
+import br.rodrigo.variaveis.Variaveis;
 
 public class Aplicacao{
 
 	private boolean ligado;
 
 	public static void main(String args[]){	
-		ClasseB cb = new ClasseB();
-		ClasseC cc = new ClasseC();
-
-	
+			Variaveis v = new Variaveis();
+		System.out.println("Pegando valor de char guardado em um int " + v.getChar());
 }
 }
