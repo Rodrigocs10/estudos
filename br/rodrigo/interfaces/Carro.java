@@ -1,6 +1,9 @@
 package br.rodrigo.interfaces;
 
-interface Carro{
+import br.rodrigo.transporte.Transporte;
+import br.rodrigo.cores.Cores;
+
+interface Carro extends Transporte, Cores{
 	/* Várias formas de declarar uma constante em uma interface*/
 	int x = 1;
 	int y = 2;
@@ -18,8 +21,6 @@ interface Carro{
 	/* Várias maneiras de declarar um contrato de método na interface.
 	  Obs.: Sempre será abstrato e publico.
 	*/
-	void acelerar();
 	public abstract void freiar();
-	abstract void voltar();
 
 }

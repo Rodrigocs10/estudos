@@ -1,6 +1,6 @@
 package br.rodrigo.interfaces;
 
-public class Corsa implements Carro{
+public abstract class Corsa implements Carro{
 
 	public void imprimirValores(){
 
@@ -8,8 +8,10 @@ public class Corsa implements Carro{
 	}
 
 	// Implementaçãoes obrigatóras da interface
-	public void acelerar(){}
-	public void freiar(){}
-	public void voltar(){}
+	public void acelerar(){
+		System.out.println("Acelerando o Corsa");
+	}
+	public abstract void freiar();
+	public abstract void voltar();
 
 }
