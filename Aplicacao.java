@@ -15,15 +15,17 @@
 //import br.rodrigo.tiposRetorno.TipoA;
 //import br.rodrigo.tiposRetorno.TipoB;
 //import br.rodrigo.declarandoArrays.Arrays;
-import br.rodrigo.blocosInicializacao.*;
+//import br.rodrigo.blocosInicializacao.*;
+import br.rodrigo.wrappers.Wrappers;
 
 public class Aplicacao{
 	public static void main(String args[]){
-		ClasseB b = new ClasseB();
-		System.out.println("--------------------------------------------");
-	
-		/* Blocos estáticos não serão mais executados. Pois a classe
-			já está carregada */
-		ClasseB b2 = new ClasseB();
+		
+		Wrappers w = new Wrappers();
+		w.treinarConstrutores();
+		w.treinarValueOf();
+		w.treinarxxxValue();
+		w.treinarParseXxx();
+		w.treinarToString();
 	}	
 }
