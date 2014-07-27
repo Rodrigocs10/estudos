@@ -14,46 +14,16 @@
 //import br.rodrigo.cores.Cores;
 //import br.rodrigo.tiposRetorno.TipoA;
 //import br.rodrigo.tiposRetorno.TipoB;
-import br.rodrigo.declarandoArrays.Arrays;
+//import br.rodrigo.declarandoArrays.Arrays;
+import br.rodrigo.blocosInicializacao.*;
 
 public class Aplicacao{
 	public static void main(String args[]){
-
-		Arrays array = new Arrays();
-		System.out.println(array.quantidades);
-
-		/* Escrevendo valores de membro array
-			Como os elementos individuais de cada posição
-			não foram declaradas, serão todos iniciados com
-			valor padrão. int -> 0
-		*/
-		for(int x:array.valores){
-			System.out.println("Valor: " + x);
-		}
-
-		/* Escrevedo arry inicializado como Anonymous Array
-		*/
-		for(String s:array.processos){
-			System.out.println(s);
-		}
-		
-		/* Salários*/
-		for(float s:array.salarios){
-			System.out.println(s);
-		}
+		ClasseB b = new ClasseB();
+		System.out.println("--------------------------------------------");
 	
-		/* Escrevendo array bidimensional */
-		for(float[] salarios: array.salariosPessoas){
-			for(float pessoa:salarios){
-				System.out.println("Salário " + pessoa);
-			}
-		}
-		
-		for(String s: array.nomes){
-			if(s != null){
-				System.out.println(s);
-			}
-		}
-	}
-}	
-
+		/* Blocos estáticos não serão mais executados. Pois a classe
+			já está carregada */
+		ClasseB b2 = new ClasseB();
+	}	
+}
