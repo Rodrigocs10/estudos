@@ -16,16 +16,14 @@
 //import br.rodrigo.tiposRetorno.TipoB;
 //import br.rodrigo.declarandoArrays.Arrays;
 //import br.rodrigo.blocosInicializacao.*;
-import br.rodrigo.wrappers.Wrappers;
+//import br.rodrigo.wrappers.Wrappers;
+import br.rodrigo.construtores.Clothing;
+import br.rodrigo.construtores.TShirt;
 
 public class Aplicacao{
 	public static void main(String args[]){
 		
-		Wrappers w = new Wrappers();
-		w.treinarConstrutores();
-		w.treinarValueOf();
-		w.treinarxxxValue();
-		w.treinarParseXxx();
-		w.treinarToString();
+		Clothing tshirt = new TShirt();		
+
 	}	
 }
